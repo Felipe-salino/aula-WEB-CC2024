@@ -1,0 +1,81 @@
+body {
+    font-family: "Fjord One", serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+#cabeçalho{
+ color: #02ff2c;
+ font-size: 30px;
+}
+
+#foto{
+  display: flex; 
+  justify-content: left; 
+  align-items: left;
+}
+
+.imagem-arredondada {
+    border-radius: 30%; /* Define o raio da borda para fazer a imagem circular */
+    overflow: hidden;   /* Certifica-se de que a imagem não ultrapasse a borda circular */
+    width: 200px;       /* Defina a largura da imagem conforme necessário */
+    height: 200px;      /* Defina a altura da imagem conforme necessário */
+    float: right;
+}
+body {
+    background-image: url('imagens/fundo-preto-abstrato.avif');
+    background-size: cover; /* Para cobrir completamente a página com a imagem de fundo */
+    background-repeat: no-repeat; /* Evita a repetição da imagem de fundo */
+    margin: 0;
+  }
+
+  .botao-container {
+    text-align: center;
+  }
+  
+  .botao-3d {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #000000; /* Cor rosa */
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #02ff2c; /* Cor rosa */
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-3d::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #02ff2c; 
+    transition: top 0.3s ease;
+    
+ 
+  }
+  
+  .botao-3d:hover::before {
+    top: 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container img {
+    margin-right: 20px; 
+  }
+
+  b {
+    color: #02ff2c;
+    font-size: 30px;
+  }
+
+  h2 {
+    color: #02ff2c;
+  }
